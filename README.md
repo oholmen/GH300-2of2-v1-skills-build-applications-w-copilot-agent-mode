@@ -8,5 +8,16 @@ Mona here. I'm done preparing your exercise. Hope you enjoy! 💚
 
 Remember, it's self-paced so feel free to take a break! ☕️
 
+## Backend seed script
+
+To populate the `octofit_db` test database, run this from the backend folder:
+
+```bash
+cd octofit-tracker/backend
+npm run seed
+```
+
+This executes `backend/src/scripts/seed.ts` and inserts realistic sample data for users, teams, activities, workouts, and leaderboard entries.
+
 [![](https://img.shields.io/badge/Go%20to%20Exercise-%E2%86%92-1f883d?style=for-the-badge&logo=github&labelColor=197935)](https://github.com/oholmen/GH300-2of2-v1-skills-build-applications-w-copilot-agent-mode/issues/1)
 
