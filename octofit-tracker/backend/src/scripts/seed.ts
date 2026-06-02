@@ -6,7 +6,9 @@ import { Activity } from "../models/activity.model";
 import { Workout } from "../models/workout.model";
 import { LeaderboardEntry } from "../models/leaderboard.model";
 
+// Seed the octofit_db database with test data.
 async function seed() {
+  console.log("Seed the octofit_db database with test data");
   await connectDatabase();
   console.log(`Connected to MongoDB at ${MONGO_URI}`);
 
