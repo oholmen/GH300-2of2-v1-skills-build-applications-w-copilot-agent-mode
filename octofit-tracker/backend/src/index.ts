@@ -4,6 +4,7 @@ import usersRouter from "./routes/users.routes";
 import teamsRouter from "./routes/teams.routes";
 import workoutsRouter from "./routes/workouts.routes";
 import leaderboardRouter from "./routes/leaderboard.routes";
+import configRouter from "./routes/config.routes";
 import { connectDatabase, MONGO_URI } from "./config/database";
 import { API_BASE_URL } from "./config/api";
 
@@ -16,6 +17,7 @@ app.use("/api/teams", teamsRouter);
 app.use("/api/activities", activityRouter);
 app.use("/api/workouts", workoutsRouter);
 app.use("/api/leaderboard", leaderboardRouter);
+app.use("/api/config", configRouter);
 
 app.get("/", (_, res) => {
   res.json({
